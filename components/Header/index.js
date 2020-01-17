@@ -17,11 +17,11 @@ function Header() {
 
   header.classList.add('header');
   date.classList.add('date');
-  temp.classList.add('span');
+  temp.classList.add('temp');
 
   date.textContent = 'SMARCH 28, 2019';
   title.textContent = 'Lambda Times';
-  temp.textContent = '98°';
+  temp.textContent = `98°`;
 
   header.append(date, title, temp);
 
@@ -29,5 +29,6 @@ function Header() {
 }
 
 const headerContainer = document.querySelector('.header-container');
+
 
 headerContainer.append(Header());
